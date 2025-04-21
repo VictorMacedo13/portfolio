@@ -32,7 +32,7 @@ export default function Home() {
               </div>
               <div className="triangle border-l-[200px] border-l-transparent border-t-[100px] border-t-[#c918ff] border-r-[200px] border-r-transparent w-6 h-10"></div>
 
-              <div className="w-28 h-28 rounded-full mt-[-68px] z-10 bg-gray-300 flex justify-center items-center transition-transform duration-300 hover:scale-150 z-0 ">
+              <div className="w-28 h-28 rounded-full mt-[-68px]  bg-gray-300 flex justify-center items-center transition-transform duration-300 hover:scale-150 z-0 ">
                 <Image
                   className="rounded-full w-[108px] h-[108px] object-cover"
                   src={avatar.src}
