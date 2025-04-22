@@ -18,6 +18,10 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   description: "Software Engineer | Fullstack Developer",
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

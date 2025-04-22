@@ -7,30 +7,30 @@ import avatar from "../assets/profile.jpeg";
 import { Social } from "@/components/social";
 import Image from "next/image";
 import { Stack } from "@/components/stack";
-import { ArrowBack } from "@mui/icons-material";
+import { ArrowBack, ArrowForward } from "@mui/icons-material";
 import { StackMinor } from "@/components/stackMinor";
 
 export default function Home() {
   const [flipped, setFlipped] = useState(false);
   return (
     <div className="flex justify-center">
-      <main className="min-h-screen w-full bg-radial-top flex flex-col justify-center items-center">
+      <main className="h-screen w-full bg-radial-top flex flex-col justify-center items-center overflow-hidden">
         <div className="absolute top-0 right-0 p-5">
           <FakeLight />
         </div>
 
-        <div className="relative w-[400px] h-[598px] [perspective:1000px] text-gray-300">
+        <div className="relative w-full h-full sm:w-[400px] sm:h-[598px] [perspective:1000px] text-gray-300 ">
           <div
             className={`relative w-full h-full transition-transform duration-700 [transform-style:preserve-3d] ${
               flipped ? "[transform:rotateY(180deg)]" : ""
             }`}
           >
             <div className="absolute w-full h-full bg-[#201F23] rounded-lg shadow-md flex flex-col items-center text-center [backface-visibility:hidden]">
-              <div className="h-48 w-16 bg-radial-bot absolute top-[-160px]"></div>
+              <div className="h-72 w-16 bg-radial-bot absolute top-[-256px]"></div>
               <div className="h-10 bg-[#c918ff] flex justify-center items-center pt-5 w-full rounded-lg">
                 <div className="w-20 h-3 rounded-lg bg-black"></div>
               </div>
-              <div className="triangle border-l-[200px] border-l-transparent border-t-[100px] border-t-[#c918ff] border-r-[200px] border-r-transparent w-6 h-10"></div>
+              <div className="triangle sm:border-l-[202px] border-l-[calc(100vw/2+8px)] mt-[-4px] border-l-transparent border-t-[100px] border-t-[#c918ff] sm:border-r-[202px] border-r-[calc(100vw/2+8px)] border-r-transparent w-6 h-10"></div>
 
               <div className="w-28 h-28 rounded-full mt-[-68px]  bg-gray-300 flex justify-center items-center transition-transform duration-300 hover:scale-150 z-0 ">
                 <Image
@@ -44,7 +44,7 @@ export default function Home() {
 
               <div className="pt-9 font-semibold text-2xl">Victor Macêdo</div>
               <div>Frontend | Backend | Mobile</div>
-              <div className="py-5 w-full flex items-center justify-start flex-col flex-1 ">
+              <div className="py-5 w-full flex items-center justify-start flex-col flex-1 px-5">
                 <div className="pb-0">
                   Desenvolvedor fullstack apaixonado por criar experiências
                   únicas com tecnologia.
@@ -69,9 +69,10 @@ export default function Home() {
                 </div>
                 <div
                   onClick={() => setFlipped(true)}
-                  className="px-4 py-2 bg-[#c918ff] text-white rounded hover:bg-[#b115e6] cursor-pointer transition-colors duration-300"
+                  className="px-4 py-2 bg-[#c918ff] flex gap-1 justify-center items-center text-white rounded hover:bg-[#b115e6] cursor-pointer transition-colors duration-300"
                 >
                   Habilidades
+                  <ArrowForward />
                   {/* <ArrowRight /> */}
                 </div>
               </div>
@@ -79,7 +80,7 @@ export default function Home() {
             </div>
 
             <div className="absolute w-full h-full bg-[#201F23] rounded-lg shadow-md flex flex-col items-center text-center  [backface-visibility:hidden] [transform:rotateY(180deg)]">
-              <div className="h-48 w-16 bg-radial-bot absolute top-[-160px]"></div>
+              <div className="h-72 w-16 bg-radial-bot absolute top-[-256px]"></div>
               <div className="h-10 bg-[#c918ff] flex justify-center items-center pt-5 w-full rounded-lg">
                 <div className="w-20 h-3 rounded-lg bg-black"></div>
               </div>
@@ -122,7 +123,7 @@ export default function Home() {
                 ></StackMinor>
                 <StackMinor name="redux" src="/redux.svg"></StackMinor>
 
-                <div className="w-full flex pt-8  justify-center items-center flex-col">
+                <div className="w-full flex py-4  justify-center items-center flex-col">
                   <button
                     onClick={() => setFlipped(false)}
                     className="px-4 py-2  bg-[#c918ff] gap-1 flex justify-center items-center text-white rounded hover:bg-[#b115e6] cursor-pointer transition-colors duration-300 h-fit"

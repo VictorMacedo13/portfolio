@@ -32,6 +32,9 @@ export default {
       backgroundImage: {
         "radial-top": "radial-gradient(circle at top, #8000D0 ,  #333 )",
         "radial-bot": "radial-gradient(circle at top, #8000D0 ,  #545454 )",
+        "gradient-1":
+          "linear-gradient(90deg, rgba(255,0,142,1) 0%, rgba(255,205,30,1) 100%)",
+        "gradient-2": "linear-gradient(161.24deg, #8000D0 , #545454)",
         polygon: "clip-path: polygon(0 0, 100% 0, 100% 60%, 0 60%);",
       },
     },
