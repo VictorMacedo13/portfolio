@@ -91,7 +91,7 @@ export default function Home() {
                 <Stack name="Node.js" src="/node.svg"></Stack>
                 <Stack name="Express.js" src="/express.svg"></Stack>
                 <Stack name="Java" src="/java.svg"></Stack>
-                <Stack name="Spring Framework" src="/spring.svg"></Stack>
+                <Stack name="Spring Framework" src="/SPRING.svg"></Stack>
                 <Stack name="React Native" src="/react.svg"></Stack>
                 <StackMinor
                   name="Tailwind CSS"
