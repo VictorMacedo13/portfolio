@@ -3,7 +3,6 @@ import { Tooltip } from "@mui/material";
 import React from "react";
 
 export const Social = () => {
-  const cvLink = "/curriculo.pdf";
   const email = "victor.macedo110697@gmail.com";
   const assunto = "Assunto do e-mail";
   const corpo = "Olá, estou entrando em contato através do portfólio.";
