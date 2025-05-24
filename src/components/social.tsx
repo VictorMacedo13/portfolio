@@ -38,7 +38,10 @@ export const Social = () => {
           </div>
         </Tooltip>
         <Tooltip title="Currículo" arrow placement="top">
-          <a href={cvLink} download>
+          <a
+            href="https://drive.google.com/file/d/1HIVFlSJ5DC5Z8Ej3VxybBrMIE784iZJS/view?usp=sharing"
+            target="_blank"
+          >
             <div className="p-3 bg-[#333238] rounded-lg text-gray-300 hover:bg-[#38373d] hover:text-white cursor-pointer">
               <Description />
             </div>
